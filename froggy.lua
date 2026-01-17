@@ -92,13 +92,13 @@ local Toggle = Tab:CreateToggle({
    if Value then
 		local SpeedBox = Instance.new("BoxHandleAdornment")
 		SpeedBox.Parent = workspace
-		SpeedBox.Name = "SpedBox"
+		SpeedBox.Name = "SpeedBox"
 		while SpeedBox.Parent == workspace do
 			wait()
 			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
 		end
 	else
-		local SpedBox = workspace.SpedBox
+		local SpeedBox = workspace.SpedBox
 		SpedBox.Parent = nil
 		wait(0.1)
 		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 14
